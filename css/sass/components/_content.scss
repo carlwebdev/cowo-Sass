@@ -1,0 +1,88 @@
+/* CSS Document - FRONT-END */
+
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - CONTENT                                                                                          */
+/* ====================================================================================================================== */
+	
+#content {
+    
+	}
+
+
+
+
+#frontWrapper { 
+	padding-top: $spacing2;
+    margin-bottom: $spacing4;
+    // &:last-of-type {margin-bottom: 0px;}
+	} // frontWrapper
+
+
+
+
+#frontWrapper_headerMega {
+	color: $color3;
+	font-size: 60px;
+	/* margin-bottom: $baseSpacing; */
+	/* @include spacing(5); */
+	margin-bottom: $spacing2;
+	/* text-align:right; */
+	text-align:center;
+	}
+	
+
+	
+	
+	
+	
+// NEST THIS FOLLOWIING SELECTORS, IF THEY ARE ACTUALL NEEDED	
+.frontWrapper_section {
+	margin-bottom: $spacing2;
+    
+    .title {
+        color: $color2;
+        font-size: $fs_huge;
+        /* margin-bottom: $spacing; */
+        /* @include spacing(5); */
+        margin-bottom: $spacing05;
+        }
+    	
+	.content {
+		font-size: $fs_m;
+		
+		a {
+			color: $color2; 
+			font-weight:bold;
+			a:hover {text-decoration:underline;}					
+			} // a	
+					
+		} // content
+    
+    
+    
+	} // frontWrapper_section	
+	
+
+	
+		
+	
+	
+
+
+
+
+
+// FOR THE CODE, IT'S CLEAR THAT IT AINT RESPONSIVE ... SO MAKE IT RESPOCNISVE, WITH A PLUGIN OR STH TO SHOW CODE INSIDE HORIZONTALLY SCROLLABLE DIVS ETC
+
+
+
+
+
+
+@media only screen and (max-width: $bp_l) { 
+
+
+
+			
+} // MEDIA-QUERY
+

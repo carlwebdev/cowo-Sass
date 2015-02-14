@@ -1,0 +1,56 @@
+/* CSS Document - FRONT-END */
+
+		
+		
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - HEADER                                                                                          */
+/* ====================================================================================================================== */
+	
+header {
+	padding: $spacing025;
+	}
+
+	#headerContent {
+		position:relative;
+		}
+
+		#weblogo {
+			float:left; /* margin-bottom:50px; */
+			font-size: $fs_huge; 
+			color:#fff;			
+			}
+
+				
+				
+				
+		#slogan {
+			position:absolute; bottom:5px; right:0;
+			font-size: $fs_l; 
+			color:#fff;	
+			
+			a {
+				color:#fff;
+								
+				&:hover {text-decoration: underline;}
+				
+				}					
+
+			} // slogan
+	
+			
+			
+					
+@media only screen and (max-width: $bp_m) { 
+
+	#weblogo {
+		float:none;
+		text-align:center;
+		}
+	#slogan {
+		position:relative;
+		text-align:center;		
+		}
+		
+		
+					
+} // MEDIA-QUERY		

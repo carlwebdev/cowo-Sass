@@ -1,0 +1,212 @@
+/* CSS Document - SASS */
+/* Front-End */
+
+
+/* do sass for colors, and for interactiuon behaviours */
+
+
+
+
+
+
+
+
+
+
+/* 
+ * VARIABLES - Colors - 1st level - semantic
+ */
+
+
+// THESE ARE OLD !!!
+$white: #fff; /* white */
+$color2: #8f8772; /* dark brown */
+$color3: #dbd5c5; /* light brown */
+$color4: #646e8f; /* dark blue */
+$color5: #c5cadb; /* light blue */
+
+
+
+$carrot: #e67e22;
+$pumpkin: #d35400;
+
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+
+
+
+
+/* 
+ * VARIABLES - Colors - 2nd level - functional
+ */
+
+/* VARIABLES */
+$color1: $white; 
+$color2: $pomegranate; 
+$color3: $alizarin; 
+
+$color4: #646e8f; /* dark blue */
+$color5: #c5cadb; /* light blue */
+
+
+
+
+
+
+
+/* 
+ * VARIABLES - Break-points
+ */
+
+/*
+$bpBig: 1024px;
+$bpMedium: 800px;
+$bpSmall: 599px;
+*/
+
+$bp_l: 1024px;
+$bp_m: 800px;
+$bp_s: 599px;
+
+
+
+
+/* 
+ * VARIABLES - Spacing
+ */
+
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4;
+$spacing6: $spacing * 6;
+$spacing8: $spacing * 8;
+$spacing075: $spacing * 0.75;
+$spacing05: $spacing * 0.5;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
+
+
+/* 
+ * VARIABLES - Font-Size
+ */
+$fs_huge: 48px;
+$fs_l: 20px;
+$fs_m: 16px;
+$fs_s: 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+$fontfamily1: Raleway; 
+
+
+
+
+/* Variables - font families */
+$tipo0:'Open Sans'; /* BASE per tota la web / text menys important */
+$tipo1:'Antonio'; /* 1a TIPUS ESPECIAL */
+
+
+
+$tipo0:'Raleway'; /* BASE per tota la web / text menys important */
+$tipo1:'Cantora One'; /* 1a TIPUS ESPECIAL */
+
+@mixin font0 {font-family: $tipo0, sans-serif;}
+@mixin font1 {font-family: $tipo1, sans-serif;}
+
+
+
+
+
+
+
+/* EXTENDS AND PLACEHOLDERS */
+
+/* centered, paddingh, paddingv, etc */
+
+
+/* LAYOUT RELATED */
+
+.centered {
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.fullwidth {
+	float:none; 
+	width:100%;
+	}
+	
+.clearfix {/* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
+	overflow:hidden;
+	}
+
+
+
+
+
+
+
+
+
+
+@mixin transitionButton {
+-webkit-transition: all 0.4s linear;
+-moz-transition: all 0.4s linear;
+-o-transition: all 0.4s linear;
+transition: all 0.4s linear;
+}
+
+
+
+
+
+/* LAYOUT RELATED */
+
+
+/* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
+
+/* MIXINS */
+
+@mixin paddingh($paddingh) {
+	padding-left: $paddingh;
+	padding-right: $paddingh;
+	}
+
+@mixin paddingv($paddingv) {
+	padding-top: $paddingv;
+	padding-bottom: $paddingv;
+	}
+
+
+
+/* SPACINGS */
+
+@mixin spacing($anyth)  {
+	margin-bottom: $baseSpacing x $anyth;
+	}
+
+
+
+
+
+
+
+
+
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+
+
+
+
+

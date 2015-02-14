@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<head>
+<!-- MERGE GOOGLE FONTS WHATEVR INTO 1 CALLING -->
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>cowoSASS - a Sass Library by cowowo</title>
+<meta name="description" content="cowoSASS is a Sass library built by cowowo."> 
+<meta name="keywords" content="sass library cowowo, scss library"> 		
+<!-- <link rel="shortcut icon" href="assets/favicon/favicon.ico"> -->
+<link rel="stylesheet" type="text/css" href="css/global.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+</head>
+<body>
+<div id="container">
+
+          
+    <div class="container_section_1">
+        <div class="container_content">
+    		
+            <header>
+                <div id="headerContent" class="clearfix">
+                    <div id="weblogo"><h1>cowoSASS</h1></div>  
+                    <div id="slogan"><h2>a simple Sass Library by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></h2></div>  
+                </div>
+            </header>
+                  
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+
+
+    <div class="container_section_2">
+        <div class="container_content">
+        
+            <div id="content">
+
+
+
+
+
+
+
+<div id="frontWrapper">
+	<div id="frontWrapper_headerMega"><h3>Variables</h3></div>
+
+
+    <div class="frontWrapper_section">
+        <div class="title"><h4>Colors</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+$c_whatever: #BADA55;
+
+$c_color1: $whatever;
+$c_color2: #F00;
+
+$c_error: $c_color2;
+</code>
+</pre> 
+
+        </div>
+    </div>
+    
+
+
+    <div class="frontWrapper_section">
+        <div class="title"><h4>Font-Size</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+$fs_xxl: 48px;
+$fs_xl: 28px;
+$fs_l: 20px;
+$fs_m: 16px;
+$fs_s: 12px;
+</code>
+</pre> 
+
+        </div>
+    </div>
+    
+    
+
+    <div class="frontWrapper_section">
+        <div class="title"><h4>Spacing</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4;
+$spacing6: $spacing * 6;
+$spacing8: $spacing * 8;
+$spacing075: $spacing * 0.75;
+$spacing05: $spacing * 0.5;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
+</code>
+</pre> 
+        
+        </div>
+    </div>
+    
+    
+
+
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Break-Points</h4></div>
+        <div class="content">
+        
+<pre>
+<code>
+$bp_xl: 1200px;
+$bp_l: 1024px;
+$bp_m: 800px;
+$bp_s: 599px;
+$bp_xs: 480px;
+</code>
+</pre> 
+        
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+        
+    
+</div> <!-- /frontWrapper -->    
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+
+<div id="frontWrapper">
+	<div id="frontWrapper_headerMega"><h3>Mixins</h3></div>
+    
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Responsive layout</h4></div>
+        <div class="content">
+        
+<pre>
+<code>
+@mixin centered { 
+  margin-left: auto;
+  margin-right: auto;
+  }
+				
+@mixin fullwidth { 
+  float: none; 
+  width: 100%;
+  }
+</code>
+</pre> 
+ 
+        </div>
+    </div> 
+
+
+
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Padding</h4></div>
+        <div class="content">
+        
+<pre>
+<code>
+@mixin paddingh($paddingh) {
+  padding-left: $paddingh;
+  padding-right: $paddingh;
+  }
+
+@mixin paddingv($paddingv) {
+  padding-top: $paddingv;
+  padding-bottom: $paddingv;
+  }
+</code>
+</pre> 
+
+        </div>
+    </div>
+
+
+
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Margin</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin marginh($marginh) {
+  margin-left: $marginh;
+  margin-right: $marginh;
+  }
+
+@mixin marginv($marginv) {
+  margin-top: $marginv;
+  margin-bottom: $marginv;
+  }
+</code>
+</pre> 
+
+        </div>
+    </div>
+    
+    
+
+    <div class="frontWrapper_section">
+	    <div class="title">Images</div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin img { 
+  width: 100%;
+  display: block;
+  }
+	   
+@mixin bg_img {
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  }    			
+</code>
+</pre> 
+
+        </div>
+    </div> 
+    
+
+
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Simple shapes</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin circle($diameter) {
+    width: $diameter;
+    height: $diameter;
+    border-radius:50%;
+    }
+    
+@mixin square($edge) {
+    width: $edge;
+    height: $edge;
+    }    
+</code>
+</pre> 
+    
+        </div>
+    </div>
+    
+
+
+
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Colors</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin rgba($red,$green,$blue,$opacity) {
+  background: rgb($red,$green,$blue); // Fallback
+  background: rgba($red,$green,$blue,$opacity);
+  }
+</code>
+</pre> 
+
+
+<br>
+<br>
+
+
+<pre>
+<code>
+@mixin rgba($color,$opacity) {
+  background: rgb($color); // Fallback
+  background: rgba($color,$opacity);
+  }
+</code>
+</pre> 
+
+        </div>
+    </div>
+    
+   
+   
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>Generic resets</h4></div>
+        <div class="content">
+
+
+
+<pre>
+<code>
+@mixin bg_reset {
+  background-color: rgba(0,0,0,0);
+  }
+
+@mixin boxshadow_reset {
+  @include box-shadow(0 0 0 0 rgba(0, 0, 0, 0.0));
+  }
+</code>
+</pre> 
+
+        
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="frontWrapper_section">
+	    <div class="title">Texts</div>
+        <div class="content">
+
+<!-- 
+capar texto a 1 linea con "..." 
+COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
+-->
+<pre>
+<code>
+@mixin ellipsis {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;	
+  }
+</code>
+</pre> 
+
+        </div>
+    </div>
+    
+            
+
+</div> <!-- /frontWrapper -->
+
+
+
+
+
+
+
+
+<div id="frontWrapper">
+	<div id="frontWrapper_headerMega"><h3>Extends</h3></div>
+    <div id="frontWrapper_headerMega"><h3>Classes and placeholders</h3></div>
+    
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>The clearfix hack</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */				
+</code>
+</pre> 
+ 
+        </div>
+    </div>
+    
+
+</div> <!-- /frontWrapper -->    
+
+
+
+
+
+
+
+
+
+            </div> <!-- /content -->
+    
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+    
+
+    <div class="container_section_1 block">
+        <div class="container_content">
+    
+            <footer class="clearfix">
+            
+                <div id="footerContent">
+                    <div id="footerContent_line1">cowoSASS</div>
+                    <!-- <div id="footerContent_line2">by <a href="http://cowowo.cat" target="_blank">cowowo</a></div> -->
+                </div>
+                
+            </footer>
+        
+        </div> <!-- /container_content -->
+    </div> <!-- /container_section -->
+
+
+</div> <!-- /container -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/project.js"></script>
+<!--
+<script type="text/javascript" src="js/lib/selectivizr-1.0.2/selectivizr-min.js"></script>
+<script type="text/javascript" src="js/lib/css3-mediaqueries.js"></script>
+-->
+</body>
+</html>

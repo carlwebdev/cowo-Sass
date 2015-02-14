@@ -1,0 +1,162 @@
+/* CSS Document - FRONT-END */
+
+/* ====================================================================================================================== */
+/* TYPOGRAPHY                                                                                                             */
+/* ====================================================================================================================== */
+
+
+
+
+
+
+	
+/*  TEXT: FONTS (font-face declarations) ======================== */
+
+
+html, body {
+    color:#000; /* default */
+    /* font-family: '$fontfamily1' ;*/
+    @include font0;
+	background-color: $color1;
+	font-size: 16px;
+	/* line-height: $spacing; */    
+    }
+
+
+
+
+p {
+	margin-bottom: $spacing;	
+	}
+
+
+
+a, 
+a:visited, 
+a:hover {
+	text-decoration:none; 
+	color:#000; 
+	/* font-weight:bold; */
+	}
+	
+
+
+/*  Typography - Headers ======================== */
+
+h1, h2, h3, h4, h5, h6 {
+/*
+font-family: Tahoma, Geneva, sans-serif;
+font-weight : normal;
+margin-top: 0px;
+*/
+/* letter-spacing: -1px; */
+}
+
+h1 {
+	// font-size:4rem;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	/*
+	line-height:1.4;
+	color:#000;
+	margin-bottom:0.2em;
+	*/
+	}
+
+/*
+h2 {font-size:2.5rem;
+	line-height:1.2;
+	color: #222;
+	margin-bottom:.5em;
+	margin-top:.5em;
+	}
+
+h3 {font-size : 1.75rem;
+	line-height : 1.3; 
+	color: #333;
+	margin-bottom : 0.3em;
+	letter-spacing: -1px;
+	}
+
+h4 {font-size:1.5rem;
+	line-height:1.25; 
+	color:#444;
+	margin-bottom:0.5em;
+	}
+
+h5 {font-size:1.25rem; 
+	color:#555;
+	margin-bottom:1.25em;
+	}
+*/
+
+h6 {
+	/* font-size:1rem;  */
+	// color:#666;
+	}
+	
+h6 {
+	// font-size: $fontsizeMedium; 
+	}
+	
+	
+		
+		
+		
+		
+		
+		
+		
+
+
+
+/* METER AQUI LO DEL CODE TAG !!!!!!!!!!!! */
+
+
+
+pre {
+ color: #fff;   
+    
+    
+// background-color: $color3;
+background-color: lighten($color3,5%);
+    
+    
+    
+border:3px solid $color2;
+// padding: $spacing05;
+@include paddingh($spacing05);
+// width:100%;
+    /*
+	-webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+	-moz-box-sizing: border-box;    // Firefox, other Gecko 
+	box-sizing: border-box;         // Opera/IE 8+
+    */
+    
+/* border-radius:10px 30px; */
+ 
+border-radius:10px 30px;
+    
+// 1st solution
+// overflow-x: scroll;    
+    // overflow-x: aut0; 
+
+// 2nd solution:  - http://css-tricks.com/snippets/css/make-pre-text-wrap/    
+   
+    
+white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    
+    
+    
+// 3rd solution: - http://alexgorbatchev.com/SyntaxHighlighter/
+    
+// margin-bottom:25px;		
+}
+
+
+
+
+		

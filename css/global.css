@@ -1,0 +1,477 @@
+/*
+ * GLOBAL
+ */
+/* SASS, COMPASS AND SUZY STUFF */
+/* @import "compass/css3"; */
+/* RESET */
+/* CSS Document - CSS Reset and Base by Carl Johansson (@lo_kal) */
+/* COWOWO FRAMEWORK */
+/* BOX MODEL */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\000038}}
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* CSS RESET =============================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000325}}
+html, body,
+div, span,
+h1, h2, h3, h4, h5, h6,
+p,
+pre, code,
+img,
+dl, dt, dd,
+ol, ul, li,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /* for headings, works */
+  font-weight: normal;
+  /* for headings, works */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000335}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000337}}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* START - CLEARFIX */
+/* apply clearfix to parent */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000350}}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000358}}
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_reset\.scss}line{font-family:\0000359}}
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/*/END - CLEARFIX */
+/* SASS */
+/* CSS Document - SASS */
+/* Front-End */
+/* do sass for colors, and for interactiuon behaviours */
+/* 
+ * VARIABLES - Colors - 1st level - semantic
+ */
+/* white */
+/* dark brown */
+/* light brown */
+/* dark blue */
+/* light blue */
+/* 
+ * VARIABLES - Colors - 2nd level - functional
+ */
+/* VARIABLES */
+/* dark blue */
+/* light blue */
+/* 
+ * VARIABLES - Break-points
+ */
+/*
+$bpBig: 1024px;
+$bpMedium: 800px;
+$bpSmall: 599px;
+*/
+/* 
+ * VARIABLES - Spacing
+ */
+/* 
+ * VARIABLES - Font-Size
+ */
+/* Variables - font families */
+/* BASE per tota la web / text menys important */
+/* 1a TIPUS ESPECIAL */
+/* BASE per tota la web / text menys important */
+/* 1a TIPUS ESPECIAL */
+/* EXTENDS AND PLACEHOLDERS */
+/* centered, paddingh, paddingv, etc */
+/* LAYOUT RELATED */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/sass\/_sass\.scss}line{font-family:\00003139}}
+.centered, .container_content {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/sass\/_sass\.scss}line{font-family:\00003145}}
+.fullwidth {
+  float: none;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/sass\/_sass\.scss}line{font-family:\00003150}}
+.clearfix {
+  /* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
+  overflow: hidden;
+}
+
+/* LAYOUT RELATED */
+/* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
+/* MIXINS */
+/* SPACINGS */
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+/* BASE */
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* TYPOGRAPHY                                                                                                             */
+/* ====================================================================================================================== */
+/*  TEXT: FONTS (font-face declarations) ======================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000316}}
+html, body {
+  color: #000;
+  /* default */
+  /* font-family: '$fontfamily1' ;*/
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  font-size: 16px;
+  /* line-height: $spacing; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000328}}
+p {
+  margin-bottom: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000336}}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #000;
+  /* font-weight:bold; */
+}
+
+/*  Typography - Headers ======================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000346}}
+h1, h2, h3, h4, h5, h6 {
+  /*
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight : normal;
+  margin-top: 0px;
+  */
+  /* letter-spacing: -1px; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000355}}
+h1 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /*
+  line-height:1.4;
+  color:#000;
+  margin-bottom:0.2em;
+  */
+}
+
+/*
+h2 {font-size:2.5rem;
+	line-height:1.2;
+	color: #222;
+	margin-bottom:.5em;
+	margin-top:.5em;
+	}
+
+h3 {font-size : 1.75rem;
+	line-height : 1.3; 
+	color: #333;
+	margin-bottom : 0.3em;
+	letter-spacing: -1px;
+	}
+
+h4 {font-size:1.5rem;
+	line-height:1.25; 
+	color:#444;
+	margin-bottom:0.5em;
+	}
+
+h5 {font-size:1.25rem; 
+	color:#555;
+	margin-bottom:1.25em;
+	}
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\0000392}}
+h6 {
+  /* font-size:1rem;  */
+}
+
+/* METER AQUI LO DEL CODE TAG !!!!!!!!!!!! */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/base\/_typography\.scss}line{font-family:\00003116}}
+pre {
+  color: #fff;
+  background-color: #ea6153;
+  border: 3px solid #c0392b;
+  padding-left: 12px;
+  padding-right: 12px;
+    /*
+	-webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
+	-moz-box-sizing: border-box;    // Firefox, other Gecko 
+	box-sizing: border-box;         // Opera/IE 8+
+    */
+  /* border-radius:10px 30px; */
+  border-radius: 10px 30px;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+/* LAYOUT */
+/* CSS Document - FRONT-END */
+/* ====================================================================================== */
+/*  RESPONSIVE STICKY FOOTER (add class .block to footer) =============================== */
+/* ====================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_sticky_footer\.scss}line{font-family:\000038}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_sticky_footer\.scss}line{font-family:\0000311}}
+#container {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_sticky_footer\.scss}line{font-family:\0000316}}
+.block {
+  display: table-row;
+  height: 1px;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* MACRO LAYOUT                                                                                                           */
+/* ====================================================================================================================== */
+/* FULL WIDTH */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_macro_layout\.scss}line{font-family:\0000314}}
+.container_section_1 {
+  background-color: #c0392b;
+}
+
+/* CONTENT WIDTH */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_macro_layout\.scss}line{font-family:\0000327}}
+.container_content {
+  max-width: 1300px;
+  min-width: 320px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_macro_layout\.scss}line{font-family:\0000351}}
+  .container_content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/layout\/_macro_layout\.scss}line{font-family:\0000362}}
+  .container_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* COMPONENTS */
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - HEADER                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\000039}}
+header {
+  padding: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000313}}
+#headerContent {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000317}}
+#weblogo {
+  float: left;
+  /* margin-bottom:50px; */
+  font-size: 48px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000326}}
+#slogan {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 20px;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000331}}
+#slogan a {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000334}}
+#slogan a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000345}}
+  #weblogo {
+    float: none;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_header\.scss}line{font-family:\0000349}}
+  #slogan {
+    position: relative;
+    text-align: center;
+  }
+}
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - NAV                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\000037}}
+#nav {
+  font-size: 16px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\0000311}}
+#nav ul {
+  overflow: hidden;
+  /* !!!!!!! */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\0000314}}
+#nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\0000318}}
+#nav li:last-of-type {
+  margin-right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\0000322}}
+#nav li a {
+  display: block;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_nav\.scss}line{font-family:\0000329}}
+#nav li a:hover,
+#nav li.current a {
+  background-color: #fff;
+  color: #c0392b;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - FOOTER                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_footer\.scss}line{font-family:\000037}}
+footer {
+  /* margin-bottom:20px; */
+  /* @extend .clearfix; */
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_footer\.scss}line{font-family:\0000315}}
+#footerContent {
+  color: #fff;
+  float: right;
+  text-align: right;
+  padding: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_footer\.scss}line{font-family:\0000323}}
+#footerContent_line1 {
+  font-size: 48px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_footer\.scss}line{font-family:\0000326}}
+#footerContent_line2 {
+  font-size: 20px;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - CONTENT                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000314}}
+#frontWrapper {
+  padding-top: 48px;
+  margin-bottom: 96px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000323}}
+#frontWrapper_headerMega {
+  color: #e74c3c;
+  font-size: 60px;
+  /* margin-bottom: $baseSpacing; */
+  /* @include spacing(5); */
+  margin-bottom: 48px;
+  /* text-align:right; */
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000339}}
+.frontWrapper_section {
+  margin-bottom: 48px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000342}}
+.frontWrapper_section .title {
+  color: #c0392b;
+  font-size: 48px;
+  /* margin-bottom: $spacing; */
+  /* @include spacing(5); */
+  margin-bottom: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000350}}
+.frontWrapper_section .content {
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000353}}
+.frontWrapper_section .content a {
+  color: #c0392b;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/cowo_SASS\/css\/sass\/components\/_content\.scss}line{font-family:\0000356}}
+.frontWrapper_section .content a a:hover {
+  text-decoration: underline;
+}
