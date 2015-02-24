@@ -244,7 +244,32 @@ $bp_xs: 480px;
 
         </div>
     </div> 
+ 
+ 
+    <div class="frontWrapper_section">
+	    <div class="title">Aspect Ratios</div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin ar_4_3 { 
+  padding-top: 75%; 
+  }
+  
+@mixin ar_16_9 { 
+  padding-top: 56.25%; 
+  }
+  
+@mixin ar_cinemascope { 
+  padding-top: 42.55%; 
+  }	     			
+</code>
+</pre> 
+
+        </div>
+    </div> 
     
+        
 
 
     <div class="frontWrapper_section">
@@ -262,7 +287,12 @@ $bp_xs: 480px;
 @mixin square($edge) {
     width: $edge;
     height: $edge;
-    }    
+    }  
+    
+@mixin rectangle($h_edge, $v_edge) {
+    width: $h_edge;
+    height: $v_edge;
+    }        
 </code>
 </pre> 
     
