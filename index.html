@@ -252,6 +252,10 @@ $bp_xs: 480px;
 
 <pre>
 <code>
+@mixin ar_square { 
+  padding-top: 100%; 
+  }
+  
 @mixin ar_4_3 { 
   padding-top: 75%; 
   }
@@ -428,6 +432,71 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 
 
 
+<div id="frontWrapper">
+    <div id="frontWrapper_headerMega"><h3>Vertical centering</h3></div>
+    
+	
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>simple, with a mixin</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+@mixin vcenter {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);	
+	}				
+</code>
+</pre> 
+ 
+        </div>
+    </div>
+    
+
+    <div class="frontWrapper_section">
+	    <div class="title"><h4>more complex, with class extends, better cross-browser support</h4></div>
+        <div class="content">
+
+<pre>
+<code>
+.ghostFather { /* must be inisde a parent container with position: relative; */
+    position:absolute; top:0; right:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    
+    /* The ghost, nudged to maintain perfect centering */
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em; /* Adjusts for spacing */
+      }
+    
+    } // ghost_father
+                   
+        
+.ghostChild {
+  width:95%; /* 100% width causes issues in Firefox... */
+  display: inline-block;
+  vertical-align: middle;
+    } 			
+</code>
+</pre> 
+ 
+        </div>
+    </div>
+    
+    
+    
+</div> <!-- /frontWrapper -->    
+
+
+
+
+
 
 
 
@@ -456,9 +525,5 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 </div> <!-- /container -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/project.js"></script>
-<!--
-<script type="text/javascript" src="js/lib/selectivizr-1.0.2/selectivizr-min.js"></script>
-<script type="text/javascript" src="js/lib/css3-mediaqueries.js"></script>
--->
 </body>
 </html>
