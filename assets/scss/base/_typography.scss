@@ -114,17 +114,17 @@ h6 {
 
 
 pre {
- color: #fff;   
+ // color: #fff;   
     
     
 // background-color: $color3;
-background-color: lighten($color3,5%);
+// background-color: lighten($color3,5%);
     
     
     
-border:3px solid $color2;
+// border:3px solid $color2;
 // padding: $spacing05;
-@include paddingh($spacing05);
+// @include paddingh($spacing05);
 // width:100%;
     /*
 	-webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
@@ -134,7 +134,7 @@ border:3px solid $color2;
     
 /* border-radius:10px 30px; */
  
-border-radius:10px 30px;
+// border-radius:10px 30px;
     
 // 1st solution
 // overflow-x: scroll;    
@@ -142,13 +142,13 @@ border-radius:10px 30px;
 
 // 2nd solution:  - http://css-tricks.com/snippets/css/make-pre-text-wrap/    
    
-    
-white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
-    
+/*   
+white-space: pre-wrap;       // css-3 
+ white-space: -moz-pre-wrap;  // Mozilla, since 1999 
+ white-space: -pre-wrap;      // Opera 4-6 
+ white-space: -o-pre-wrap;    // Opera 7 
+ word-wrap: break-word;       // Internet Explorer 5.5+ 
+*/  
     
     
 // 3rd solution: - http://alexgorbatchev.com/SyntaxHighlighter/
