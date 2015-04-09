@@ -1,5 +1,6 @@
 /*
- * GLOBAL
+ * Project : cowo-Sass
+ * File: GLOBAL
  */
 /* SASS, COMPASS AND SUZY STUFF */
 /* @import "compass/css3"; */
@@ -92,17 +93,6 @@ img {
 /* dark blue */
 /* light blue */
 /* 
- * VARIABLES - Break-points
- */
-/*
-$bpBig: 1024px;
-$bpMedium: 800px;
-$bpSmall: 599px;
-*/
-/* 
- * VARIABLES - Spacing
- */
-/* 
  * VARIABLES - Font-Size
  */
 /* Variables - font families */
@@ -113,30 +103,41 @@ $bpSmall: 599px;
 /* EXTENDS AND PLACEHOLDERS */
 /* centered, paddingh, paddingv, etc */
 /* LAYOUT RELATED */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass_style\.scss}line{font-family:\00003100}}
 .centered, .container_content {
   /* display: block; */
   margin-left: auto;
   margin-right: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass_style\.scss}line{font-family:\00003106}}
 .fullwidth {
   float: none;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_sass_style\.scss}line{font-family:\00003111}}
 .clearfix {
   /* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
   overflow: hidden;
 }
 
-/* LAYOUT RELATED */
-/* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
-/* MIXINS */
-/* SPACINGS */
 /* CREATE MIXIN for rem fontsize and px fallback solution */
+/* CSS Document - SASS */
+/* Front-End */
+/* LAYOUT RELATED */
+/* 
+ * VARIABLES - Break-points
+ */
+/* 
+ * VARIABLES - Spacing
+ */
+/* SPACINGS */
+/*
+@mixin spacing($anyth)  {
+	margin-bottom: $baseSpacing x $anyth;
+	}
+*/
 /* CSS Document - FRONT-END */
 /* ====================================================================================================================== */
 /* TYPOGRAPHY                                                                                                             */
@@ -343,48 +344,6 @@ header {
 }
 /* CSS Document - FRONT-END */
 /* ====================================================================================================================== */
-/* LAYOUT SECTION - NAV                                                                                          */
-/* ====================================================================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\000037}}
-#nav {
-  font-size: 16px;
-  color: #fff;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000311}}
-#nav ul {
-  overflow: hidden;
-  /* !!!!!!! */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000314}}
-#nav li {
-  float: left;
-  margin-right: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000318}}
-#nav li:last-of-type {
-  margin-right: 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000322}}
-#nav li a {
-  display: block;
-  padding: 5px 10px;
-  background-color: #e74c3c;
-  color: #fff;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000329}}
-#nav li a:hover,
-#nav li.current a {
-  background-color: #fff;
-  color: #c0392b;
-}
-
-/* CSS Document - FRONT-END */
-/* ====================================================================================================================== */
 /* LAYOUT SECTION - FOOTER                                                                                          */
 /* ====================================================================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_footer\.scss}line{font-family:\000037}}
@@ -449,12 +408,12 @@ footer {
 .frontWrapper_section .content {
   font-size: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_content\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_content\.scss}line{font-family:\0000353}}
 .frontWrapper_section .content a {
   color: #c0392b;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_content\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_content\.scss}line{font-family:\0000356}}
 .frontWrapper_section .content a a:hover {
   text-decoration: underline;
 }

@@ -1,20 +1,19 @@
 /*
- * GLOBAL
+ * Project : cowo-Sass
+ * File: GLOBAL
  */
-
 
 /* SASS, COMPASS AND SUZY STUFF */
 /* @import "compass/css3"; */
 
-
 /* BASE */
 @import "base/reset";
-@import "base/sass";
+@import "base/sass_style";
+@import "base/sass_layout";
 @import "base/typography";
 @import "base/layout";
 
 /* COMPONENTS */
 @import "components/header";
-@import "components/nav";
 @import "components/footer";
 @import "components/content";
