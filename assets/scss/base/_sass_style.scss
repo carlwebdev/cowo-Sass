@@ -54,7 +54,6 @@ $color5: #c5cadb; /* light blue */
 
 
 
-
 /* 
  * VARIABLES - Font-Size
  */
@@ -62,6 +61,7 @@ $fs_huge: 48px;
 $fs_l: 20px;
 $fs_m: 16px;
 $fs_s: 12px;
+
 
 
 
@@ -89,44 +89,12 @@ $tipo1:'Cantora One'; /* 1a TIPUS ESPECIAL */
 
 
 
-
-/* EXTENDS AND PLACEHOLDERS */
-
-/* centered, paddingh, paddingv, etc */
-
-
-/* LAYOUT RELATED */
-
-.centered {
-	/* display: block; */
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-.fullwidth {
-	float:none; 
-	width:100%;
-	}
-	
-.clearfix {/* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
-	overflow:hidden;
-	}
-
-
-
-
-
-
-
-
-
-
 @mixin transitionButton {
--webkit-transition: all 0.4s linear;
--moz-transition: all 0.4s linear;
--o-transition: all 0.4s linear;
-transition: all 0.4s linear;
-}
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	}
 
 
 
@@ -136,9 +104,6 @@ transition: all 0.4s linear;
 
 
 // create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
-
-
-
 
 
 

@@ -5,10 +5,57 @@
 /* ====================================================================================================================== */
 
 
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+@mixin f_roboto { // regular
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	
+	@mixin f_roboto_light {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
 
 
 
 
+
+
+@mixin f_main { // CMS MAIN FONT - for body tag 
+    @include f_roboto;
+    }		
+		
+@mixin f_inputs { // FORM - INPUTS
+    @include f_roboto_light;
+    }
+
+@mixin f_placeholders { // FORM - INPUT PLACEHOLDERS
+		@include f_roboto_light_italic;
+    }
+    ::-webkit-input-placeholder {@include f_placeholders;}
+    ::-moz-placeholder {@include f_placeholders;}
+    :-ms-input-placeholder {@include f_placeholders;}
+    input:-moz-placeholder {@include f_placeholders;} 	
+		
+		
+		
+		
+		
 	
 /*  TEXT: FONTS (font-face declarations) ======================== */
 
@@ -16,7 +63,10 @@
 html, body {
     color:#000; /* default */
     /* font-family: '$fontfamily1' ;*/
-    @include font0;
+    // @include font0;
+		
+		@include f_main;
+		
 	background-color: $color1;
 	font-size: 16px;
 	/* line-height: $spacing; */    
