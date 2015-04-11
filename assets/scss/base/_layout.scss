@@ -1,88 +1,40 @@
-/* CSS Document - FRONT-END */
-
-
-/* ====================================================================================== */
-/*  RESPONSIVE STICKY FOOTER (add class .block to footer) =============================== */
-/* ====================================================================================== */
-
 /*
-html, body {
-	height: 100%;
-	}
-#container {
-	display: table;
-	height: 100%;
-	width:100%;
-	}
-.block {
-	display: table-row;
-	height: 1px;
-	}
-*/	
-	
-/* ====================================================================================================================== */
-/* MACRO LAYOUT                                                                                                           */
-/* ====================================================================================================================== */
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Sass
+ * File: Layout
+ */
 
 
 
-#container {
+body {
+	background-color: $c_white; 
+  }
+
+
+#page {
 	
 	}
 
-	/* FULL WIDTH */
-	.container_section_1 {
-		background-color: $color2;
-        
-        
-        // background-color: #999;
-        
-        
-		} 
-	.container_section_2 {
-		
-		} 
-		
-		/* CONTENT WIDTH */
-		.container_content {
-			@extend .centered; 
-			max-width:1300px; 
-			min-width:320px; 
-			position:relative; 
-			@include paddingh(20px)
-			} 
-			
-
-
-
-
-			
-@media only screen and (max-width: $bp_l) {
-
-		
+	header, footer {
+		background-color: $c_primary;  
+		}
 	
-					
-} // MEDIA-QUERY			
-
-
-
+		
+.frame { 
+	@include centered;
+	/* max-width:1300px; */
+	max-width:1140px;
+	min-width:320px; 
+	@include paddingh($spacing);	
+  } 			
+	
+	
+	
 @media only screen and (max-width: $bp_m) { 
 
-	.container_content {
-		@include paddingh(15px)
-		} 		
+.frame { 
+	@include paddingh($spacing05);	
+  } 
 		
 					
-} // MEDIA-QUERY
-
-
-
-@media only screen and (max-width: $bp_s) { 
-
-	.container_content {
-		@include paddingh(10px)
-		} 		
-			
-					
-} // MEDIA-QUERY
-
+} // MEDIA-QUERY	
