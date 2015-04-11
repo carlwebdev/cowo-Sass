@@ -1,19 +1,16 @@
-/* CSS Document - CSS Reset and Base by Carl Johansson (@lo_kal) */
-/* COWOWO FRAMEWORK */
-
-
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Sass
+ * File: Reset
+ */
 
 
 /* BOX MODEL */
 * {
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box; /* Firefox, other Gecko */
-	box-sizing: border-box; /* Opera/IE 8+ */
+	@include box-sizing(border-box); /* Sass - Compass */
 	}
 	
 	
-	
-/* CSS RESET =============================================================== */
 html, body,
 div, span,
 h1, h2, h3, h4, h5, h6, 
@@ -23,10 +20,10 @@ img,
 dl, dt, dd, 
 ol, ul, li,
 img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
 	font-size:100%; /* for headings, works */
 	font-weight: normal; /* for headings, works */
 	}
@@ -41,20 +38,3 @@ img {
 
 
 
-
-
-
-
-
-/* START - CLEARFIX */ /* apply clearfix to parent */
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-/*/END - CLEARFIX */

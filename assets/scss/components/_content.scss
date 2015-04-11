@@ -1,53 +1,44 @@
-/* CSS Document - FRONT-END */
-
-/* ====================================================================================================================== */
-/* LAYOUT SECTION - CONTENT                                                                                          */
-/* ====================================================================================================================== */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Sass
+ * File: Content
+ */
 	
-#content {
-    
-	}
+main {
+	@include paddingv($spacing2);
+	
+	.inner {
+		
+		}
+	
+	}	// main
 
-
-
-
-#frontWrapper { 
-	padding-top: $spacing2;
-    margin-bottom: $spacing4;
-    // &:last-of-type {margin-bottom: 0px;}
-	} // frontWrapper
 
 
 
 
 #frontWrapper_headerMega {
-	color: $color3;
-	font-size: 60px;
-	/* margin-bottom: $baseSpacing; */
-	/* @include spacing(5); */
-	margin-bottom: $spacing2;
-	/* text-align:right; */
-	text-align:center;
+	margin-bottom: $spacing;
+	font-size: $fs_xxxl;
+	color: $c_text;
 	}
 	
 
 	
 	
 	
-	
-// NEST THIS FOLLOWIING SELECTORS, IF THEY ARE ACTUALL NEEDED	
-.frontWrapper_section {
+
+main section {
 	margin-bottom: $spacing2;
-    
-    .title {
-        color: $color2;
-        font-size: $fs_huge;
-        /* margin-bottom: $spacing; */
-        /* @include spacing(5); */
-        margin-bottom: $spacing05;
-        }
+
+	.title {
+			color: $c_text_2;
+			font-size: $fs_xxl;
+			margin-bottom: $spacing05;
+			}
     	
 	.content {
+		/*
 		font-size: $fs_m;
 
 		a {
@@ -55,12 +46,14 @@
 			font-weight:bold;
 			a:hover {text-decoration:underline;}					
 			} // a	
+		
+		*/
 					
 		} // content
     
     
     
-	} // frontWrapper_section	
+	} // section	
 	
 
 	

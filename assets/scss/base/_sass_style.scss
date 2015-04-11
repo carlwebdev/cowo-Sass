@@ -1,15 +1,8 @@
-/* CSS Document - SASS */
-/* Front-End */
-
-
-/* do sass for colors, and for interactiuon behaviours */
-
-
-
-
-
-
-
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Sass
+ * File: Sass style
+ */
 
 
 
@@ -17,47 +10,19 @@
  * VARIABLES - Colors - 1st level - semantic
  */
 
+$c_white: #fff; /* white */
+$c_primary: #673AB7; // PRIMARY COLOR
+$c_accent: #E040FB;
 
-// THESE ARE OLD !!!
-$white: #fff; /* white */
-$color2: #8f8772; /* dark brown */
-$color3: #dbd5c5; /* light brown */
-$color4: #646e8f; /* dark blue */
-$color5: #c5cadb; /* light blue */
-
-
-
-$carrot: #e67e22;
-$pumpkin: #d35400;
-
-$alizarin: #e74c3c;
-$pomegranate: #c0392b;
-
-
-
-
-/* 
- * VARIABLES - Colors - 2nd level - functional
- */
-
-/* VARIABLES */
-$color1: $white; 
-$color2: $pomegranate; 
-$color3: $alizarin; 
-
-$color4: #646e8f; /* dark blue */
-$color5: #c5cadb; /* light blue */
-
-
-
-
-
-
+$c_text: #212121;
+$c_text_2: #727272;
 
 /* 
  * VARIABLES - Font-Size
  */
-$fs_huge: 48px;
+$fs_xxxl: 48px;
+$fs_xxl: 34px;
+$fs_xl: 28px;
 $fs_l: 20px;
 $fs_m: 16px;
 $fs_s: 12px;

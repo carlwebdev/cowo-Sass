@@ -1,41 +1,32 @@
-/* CSS Document - FRONT-END */
-
-/* ====================================================================================================================== */
-/* LAYOUT SECTION - FOOTER                                                                                          */
-/* ====================================================================================================================== */
-	
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Sass
+ * File: Footer
+ */
+ 
 footer {
-	/* margin-bottom:20px; */
-	/* @extend .clearfix; */
 	overflow:hidden;
-	}
-
-
-
-	#footerContent {
-		color:#fff;
-		float:right;
-		text-align:right;
-        
-       padding: $spacing025;
-		
+	
+	.inner {
+		overflow:hidden;
+		padding: $spacing05;
+		// text-align:right;  
+		text-align: center;    
+    color:#fff;		
 		}
-		#footerContent_line1 {
-			font-size: $fs_huge;
-			}
-		#footerContent_line2 {
-			font-size: $fs_l;
-			}			
-		
-	
-	
-
-
-
-
-@media only screen and (max-width: $bp_l) {
-
-		
-		
 			
-} // MEDIA-QUERY	
+	} // footer
+
+
+		.footerContent {
+			font-size: $fs_l;
+			
+			span {font-size: $fs_m;}
+			
+			
+			img {
+				width: 86px;
+				vertical-align: middle;
+				}
+				
+			} // footerContent			
