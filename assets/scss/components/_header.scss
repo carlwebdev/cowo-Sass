@@ -5,6 +5,7 @@
  */
 	
 header {
+	border-top: $spacing solid $c_primary_dark; // implement THIS N OTHER REPOS TOO
 	
 	.inner {
 		padding: $spacing025; 

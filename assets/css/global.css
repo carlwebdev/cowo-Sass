@@ -169,8 +169,14 @@ a:hover {
   color: #000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000384}}
+h1, h2 {
+  font-weight: normal;
+  font-weight: 300;
+}
+
 /* METER AQUI LO DEL CODE TAG !!!!!!!!!!!! */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000392}}
 pre {
     /*
 	-webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
@@ -226,7 +232,11 @@ header, footer {
  * Project: cowo-Sass
  * File: Header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\000037}}
+header {
+  border-top: 24px solid #512da8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000310}}
 header .inner {
   padding: 6px;
   padding-top: 12px;
@@ -235,7 +245,7 @@ header .inner {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000320}}
 #main_logo {
   float: left;
   font-size: 34px;
@@ -244,7 +254,7 @@ header .inner {
   font-weight: 300;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000327}}
 #slogan {
   position: absolute;
   bottom: 12px;
@@ -252,23 +262,23 @@ header .inner {
   font-size: 20px;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000334}}
 #slogan a {
   color: inherit;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000336}}
 #slogan a:hover {
   color: #e040fb;
 }
 
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000346}}
   #main_logo {
     float: none;
     text-align: center;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000350}}
   #slogan {
     position: relative;
     text-align: center;
@@ -276,7 +286,7 @@ header .inner {
   }
 }
 @media only screen and (max-width: 599px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/components\/_header\.scss}line{font-family:\0000365}}
   #slogan span {
     display: block;
   }
