@@ -261,7 +261,11 @@ $bp_xs: 480px;
   
 @mixin ar_cinemascope { 
   padding-top: 42.55%; 
-  }	     			
+  }	   
+  
+@mixin ar_poster { 
+  padding-top: 134.5%; 
+  }	        			
 </pre> 
 
         </div>
@@ -375,7 +379,49 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 
 
 
+
+    <div class="frontWrapper_section">
+	    <div class="title">CSS transforms & animations</div>
+        <div class="content">
+
+<pre class="brush:javascript">
+
+/* css transitions and animatiosn, starting a framework system here !!!!!!!!!!!! */
+
+/* CSS3 : TRANSITION */
+@mixin rotate {
+		-webkit-transition-duration: 0.8s;
+		-moz-transition-duration: 0.8s;
+		-o-transition-duration: 0.8s;
+		transition-duration: 0.8s;
+		-webkit-transition-property: -webkit-transform;
+		-moz-transition-property: -moz-transform;
+		-o-transition-property: -o-transform;
+		transition-property: transform;
+		
+		// @include transition();
+		
+			&:hover { 
+				-webkit-transform:rotate(360deg);
+				-moz-transform:rotate(360deg); 
+				-o-transform:rotate(360deg);
+				} 
+				
+	} // mixin rotate
+
+</pre> 
+
+        </div>
+    </div>
+    
+    
+    
+    
 </section> 
+
+
+
+
 
 
 
@@ -475,6 +521,14 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 </section> 
 
 
+
+
+
+
+  
+  
+  
+  
 
 
 
