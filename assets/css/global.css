@@ -212,15 +212,14 @@ header, footer {
 .frame {
   margin-left: auto;
   margin-right: auto;
-  /* max-width:1300px; */
-  max-width: 1140px;
+  max-width: 1024px;
   min-width: 320px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 @media only screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_layout\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Sass\/assets\/scss\/base\/_layout\.scss}line{font-family:\0000334}}
   .frame {
     padding-left: 12px;
     padding-right: 12px;

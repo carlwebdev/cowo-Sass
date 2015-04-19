@@ -22,8 +22,7 @@ body {
 		
 .frame { 
 	@include centered;
-	/* max-width:1300px; */
-	max-width:1140px;
+	max-width:1024px;
 	min-width:320px; 
 	@include paddingh($spacing);	
   } 			
