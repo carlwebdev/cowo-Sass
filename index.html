@@ -56,6 +56,9 @@
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - VARIABLES - COLORS
+ */ 
 $c_whatever: #BADA55;
 
 $c_color1: $whatever;
@@ -83,6 +86,9 @@ $c_placeholders: #ccc; // TIP - lighter than c_inputs
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - VARIABLES - FONT-SIZES
+ */
 $fs_xxl: 48px;
 $fs_xl: 28px;
 $fs_l: 20px;
@@ -100,6 +106,9 @@ $fs_s: 12px;
         <div class="content">
 
 <pre class="brush:javascript">
+/*
+ * SASS - VARIABLES - LAYOUT - SPACING
+ */
 $spacing: 24px;
 $spacing2: $spacing * 2;
 $spacing3: $spacing * 3;
@@ -124,6 +133,9 @@ $spacing0125: $spacing * 0.125;
         <div class="content">
         
 <pre class="brush:javascript">
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */ 
 $bp_xl: 1200px;
 $bp_l: 1024px;
 $bp_m: 800px;
@@ -161,6 +173,10 @@ $bp_xs: 480px;
         <div class="content">
         
 <pre class="brush:javascript">
+/*
+ * SASS - MIXINS - LAYOUT - RESPONSIVE
+ */
+ 
 @mixin centered { 
   margin-left: auto;
   margin-right: auto;
@@ -169,6 +185,15 @@ $bp_xs: 480px;
 @mixin fullwidth { 
   float: none; 
   width: 100%;
+  
+  
+/*
+width: 100% !important; 
+clear: both; 
+float: none; 
+margin-right: 0; 
+*/
+  
   }
 </pre> 
  
@@ -183,6 +208,10 @@ $bp_xs: 480px;
         <div class="content">
         
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - LAYOUT - PADDING
+ */
+ 
 @mixin paddingh($paddingh) {
   padding-left: $paddingh;
   padding-right: $paddingh;
@@ -205,6 +234,10 @@ $bp_xs: 480px;
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - LAYOUT - MARGIN
+ */   
+ 
 @mixin marginh($marginh) {
   margin-left: $marginh;
   margin-right: $marginh;
@@ -226,6 +259,10 @@ $bp_xs: 480px;
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - IMAGES
+ */ 
+ 
 @mixin img { 
   width: 100%;
   display: block;
@@ -247,6 +284,10 @@ $bp_xs: 480px;
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - IMAGES - ASPECT RATIOS
+ */ 
+ 
 @mixin ar_square { 
   padding-top: 100%; 
   }
@@ -266,7 +307,13 @@ $bp_xs: 480px;
 @mixin ar_poster { 
   padding-top: 134.5%; 
   }	
-          			
+ 
+@mixin ar_square {padding-top: 100%;} 
+@mixin ar_4_3 {padding-top: 75%;} 
+@mixin ar_16_9 {padding-top: 56.25%;} 
+@mixin ar_cinemascope {padding-top: 42.55%;}	    
+@mixin ar_poster {padding-top: 134.5%;}	
+            			
 </pre> 
 
         </div>
@@ -280,6 +327,10 @@ $bp_xs: 480px;
         <div class="content">
 
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - SIMPLE SHAPES
+ */ 
+ 
 @mixin circle($diameter) {
     width: $diameter;
     height: $diameter;
@@ -363,6 +414,10 @@ capar texto a 1 linea con "..."
 COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 -->
 <pre class="brush:javascript">
+/* 
+ * SASS - MIXINS - TEXT
+ */
+ 
 @mixin ellipsis {
   white-space: nowrap; 
   overflow: hidden; 
@@ -370,6 +425,36 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;	
   }
+
+/* COMPASS */
+@mixin ellipsis {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;	
+  }  
+  
+  
+  
+  
+// source: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+@mixin word-wrap() {
+	
+	
+// -ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     // word-break: break-all;
+		 
+		 
+		 	
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+  
 </pre> 
 
         </div>
@@ -547,7 +632,7 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
 
           <div class="footerContent">
             Made in Barcelona<br>
-            <span>by</span> <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png"></a>
+            <!--<span>by</span> --><a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png"></a>
           </div>
         
         </div> <!-- /inner -->
