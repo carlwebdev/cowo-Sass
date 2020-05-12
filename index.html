@@ -2,7 +2,7 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
-<title>cowo-Sass - a Sass library by @carlwebdev</title>
+<title>cowoSass - a Sass library by @carlwebdev</title>
 <meta name="description" content="cowo-Sass is a Sass library built by @carlwebdev."> 
 <meta name="keywords" content="sass library cowowo, scss library, sass mixin library"> 		
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
@@ -27,7 +27,7 @@
  	 <div class="frame">
       <div class="inner">
       
-        <div id="main_logo"><h1>cowo-Sass</h1></div>  
+        <div id="main_logo"><h1>cowoSass</h1></div>  
         <div id="slogan"><h2><span>a simple Sass library</span> <span>by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></span></h2></div>  
         
       </div> <!-- /inner -->
@@ -88,6 +88,7 @@ $c_placeholders: #ccc; // TIP - lighter than c_inputs
 <pre class="brush:javascript">
 /* 
  * SASS - VARIABLES - FONT-SIZES
+ * CREATE MIXIN for rem fontsize and px fallback solution !!!!!!!!!!!!!!
  */
 $fs_xxl: 48px;
 $fs_xl: 28px;
@@ -124,6 +125,22 @@ $spacing0125: $spacing * 0.125;
         </div>
     </div>
     
+    
+    
+    <div class="frontWrapper_section">
+        <div class="title"><h4>Proportions</h4></div>
+        <div class="content">
+
+<pre class="brush:javascript">
+/*
+ * SASS - VARIABLES - LAYOUT - PROPORTIONS - Golden Ratio
+ */
+$golden_long: 61.8%;
+$golden_short: 38.2%;
+</pre> 
+        
+        </div>
+    </div>    
     
 
 
@@ -295,6 +312,11 @@ margin-right: 0;
 @mixin ar_4_3 { 
   padding-top: 75%; 
   }
+
+@mixin ar_7_5 { 
+	// padding-top: (100% * (5/7)) ;
+	padding-top: 71.43%; /* 7:5 */
+}
   
 @mixin ar_16_9 { 
   padding-top: 56.25%; 
@@ -308,11 +330,12 @@ margin-right: 0;
   padding-top: 134.5%; 
   }	
  
-@mixin ar_square {padding-top: 100%;} 
-@mixin ar_4_3 {padding-top: 75%;} 
-@mixin ar_16_9 {padding-top: 56.25%;} 
-@mixin ar_cinemascope {padding-top: 42.55%;}	    
-@mixin ar_poster {padding-top: 134.5%;}	
+@mixin ar_square {padding-top: 100%;} /* 1:1 */
+@mixin ar_4_3 {padding-top: 75%;} /* 4:3 */  
+@mixin ar_7_5 {padding-top: 71.43%;} /* 7:5 */
+@mixin ar_16_9 {padding-top: 56.25%;} /* 16:9 */ 
+@mixin ar_cinemascope {padding-top: 42.55%;} /* xxx */	    
+@mixin ar_poster {padding-top: 134.5%;} /* xxx */	
             			
 </pre> 
 
@@ -455,6 +478,18 @@ COULD PROBABLY JUST USE COMPASS FOR THIS! - and for other things too
   hyphens:         auto;
 }
   
+  
+  
+// LINE CLAMP  
+// https://css-tricks.com/almanac/properties/l/line-clamp/ 
+@mixin line-clamp($rows) {
+	display: -webkit-box;
+	-webkit-line-clamp: $rows;
+	-webkit-box-orient: vertical; // vip...  
+	overflow: hidden;
+	// line-clamp: $rows;
+  }	
+    
 </pre> 
 
         </div>
