@@ -1,0 +1,35 @@
+REUSABLE MIXINS
+mixin underline, find it, i liked how it worked
+
+
+TRICK TO UNDO ELIPSIS OR STH, DE PATI inside
+elipsis_reset
+p {white-space:inherit;}
+
+
+DOC - CREATE MIXIN for rem fontsize and px fallback solution
+
+/* 
+ * FALLBACKS using Sass
+ */
+ 
+
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+
+/* FALLBACK for background opacity */
+/*
+#asfgasafasf {
+		background: #ccc; // Fall-back for brosers that don't support opacity
+		background: rgba(204, 204, 204, 0.85);
+	}*/
+
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
+
+
+//// SASS FUNCTINS FILE PARTIAL FILE
+/* CSS Document - SASS */
+/* Front-End */
+/* FUNCTIONS */ // for the sass grid thingee	
+// - would be as sepoarate file anyways - DO THIS FOR THE BOLEPLATE !!!!!!!!!!!!!!!!!!!!
+

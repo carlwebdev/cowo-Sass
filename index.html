@@ -153,11 +153,12 @@ $golden_short: 38.2%;
 /*
  * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
  */ 
-$bp_xl: 1200px;
+$bp_xxl: 1440px;
+$bp_xl: 1200px; // 1240 ?? idf change, then also change in cB 
 $bp_l: 1024px;
-$bp_m: 800px;
-$bp_s: 599px;
-$bp_xs: 480px;
+$bp_m: 768px; // change to 767px ??? // 800px
+$bp_s: 568px; // 599px
+$bp_xs: 414px; // 480px
 </pre> 
         
         </div>
@@ -186,6 +187,29 @@ $bp_xs: 480px;
     
 	
     <div class="frontWrapper_section">
+	    <div class="title"><h4>New things</h4></div>
+        <div class="content">
+        
+<pre class="brush:javascript">
+/*
+ * SASS - MIXINS - LAYOUT - NEW
+ */
+
+@mixin sticky {
+  position: -webkit-sticky; 
+  position: sticky; // Combines relative & fixed, better than fixed by itself (to prevent background space glitch)
+  top: 0;
+}
+
+</pre> 
+ 
+        </div>
+    </div> 
+  
+  
+  
+  
+    <div class="frontWrapper_section">
 	    <div class="title"><h4>Responsive layout</h4></div>
         <div class="content">
         
@@ -197,13 +221,12 @@ $bp_xs: 480px;
 @mixin centered { 
   margin-left: auto;
   margin-right: auto;
-  }
+}
 				
 @mixin fullwidth { 
   float: none; 
   width: 100%;
-  
-  
+    
 /*
 width: 100% !important; 
 clear: both; 
